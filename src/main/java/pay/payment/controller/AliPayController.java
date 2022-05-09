@@ -90,7 +90,6 @@ public class AliPayController {
             //2 判断 total_amount 是否确实为该订单的实际金额（即商户订单创建时的金额）
             String totalAmount = params.get("total_amount");
             int totalAmountInt = new BigDecimal(totalAmount).multiply(new BigDecimal("100")).intValue();
-            //int totalFeeInt = order.getTotalFee().intValue();
             int totalFeeInt = order.getTotalFee();
             if (totalAmountInt != totalFeeInt) {
                 log.error("金额校验失败");

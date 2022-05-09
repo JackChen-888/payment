@@ -22,8 +22,8 @@ import java.security.PrivateKey;
 /**
  * @author Chen
  * 使用set方法将wxpay节点中的值填充到当前类的属性中
- * @PropertySource 读取配置文件
- * @ConfigurationProperties 读取wxpay节点
+ * PropertySource 读取配置文件
+ * ConfigurationProperties 读取wxpay节点
  */
 @Configuration
 @PropertySource("classpath:wxpay.properties")
